@@ -1,0 +1,49 @@
+---
+title: "Week 11"
+author: "Matthew Roland"
+date: "2023-11-08"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Ebay's Recommendation System
+
+Ebay is an online auction/marketplace platform that allows users to auction or sell a variety of products of varying quality. 
+
+Like almost any online marketplace service, Ebay possesses a type of recommendation system that suggests products based on search history.
+
+# Scenario Design Analysis  
+
+## For the Organization
+
+Ebay's target users are both individuals looking to act as sellers, and individuals looking to act as buyers. It is a long-standing and convenient service that allows for (mostly) reliable and secure transactions between consumers and vendors.
+
+Ebay's key goals are to facilitate transactions between vendors and buyers, in order to create a secure environment. Of course, Ebay profits off of the transaction fees that result from these transactions, as well as the ads and partnerships that the service engages in, as well.
+
+Ebay accomplishes their goals through a variety of methods. Chiefly, they offer protections for buyers, in the event the vendor does not hold their end of the bargain (although I have heard protection for sellers is somewhat limited). Furthermore, Ebay's user interface is rather convenient, allowing consumers to quickly and easily search for products that suit their needs; this is also facilitated by Ebay's recommendation systems that guide consumers toward products based on their browsing and purchase history.
+
+## For the Customers
+
+The recommendation system allows the target users to conveniently be directed to products that they may have an interest in. This also aids the target userbase of sellers by directing potential consumers to their product listings.
+
+The target users goals are to purchase and/or sell products
+
+They accomplish these goals by taking advantage of the user interface, systems, and protections that this service offers
+
+## Reverse Engineering
+
+As mentioned, Ebay uses algorithms to track browsing and purchase history in order to advertise relevant or similar products.
+
+From some information that I have gathered, I have learned that Ebay has recently developed Natural Language Processing models that promote listings based on sentiment data gathered from product titles (https://www.infoq.com/news/2023/01/ebay-recommendations-odel/). 
+
+An example of the system in action would be a scenario where you purchase an electronic of some kind (let's say a Raspberry Pi board); Ebay may then recommend similar PCBs or components that are similar to your purchase, and similar to the purchases of other users with a similar purchase history.
+
+#Recommendations for Improvement
+
+Ebay can potentially improve its recommendation system by refining its current models, or by training other NLP based models. 
+I suppose one other way to improve the recommendation system would be to allow users, themselves, to specify criteria for promoted products that will appear on their pages. This could potentially allow for more accurate regretting, and reduce the "noise" of products that do not suit the consumers' interests
